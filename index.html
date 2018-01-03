@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Income Tax Deduction Calculator</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script src="./income_calculator.js"></script>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <form id="payroll-form" action="#">
+            <label>Pay Rate:<input type="number" name="payrate" value="10.50" step="0.01"></label><br>
+            <b>Normal:</b> <label>Hours:<input type="number" name="nhours" value="0"></input></label> 
+            <label>Minutes:<input type="number" name="nmins" value="0"></input></label><br>
+            <b>Overtime:</b> <label>Hours:<input type="number" name="ohours" value="0"></input></label> 
+            <label>Minutes:<input type="number" name="omins" value="0"></input></label><br>
+            <input type="submit" value="Calculate"></input>
+        </form>
+        
+        <h3>Results:</h5>
+        <label>Gross: <input type="text" name="gross" readonly></input></label><br>
+        <label>FICA: <input type="text" name="fica" readonly></input></label><br>
+        <label>SDI: <input type="text" name="sdi" readonly></input></label><br>
+        <label>SIT: <input type="text" name="sit" readonly></input></label><br>
+        <label>FIT: <input type="text" name="fit" readonly></input></label><br>
+        <label>Subtax: <input type="text" name="subtax" readonly></input></label><br>
+        <label>Net: <input type="text" name="net" readonly></input></label><br>
+    </body>
+</html>
